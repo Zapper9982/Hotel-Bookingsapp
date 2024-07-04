@@ -1,0 +1,164 @@
+/* General Styles */
+.reserve {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .rContainer {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .rContainer:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Close Icon */
+  .rClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ff0000;
+    transition: color 0.2s;
+  }
+  
+  .rClose:hover {
+    color: #d9534f;
+  }
+  
+  /* Item Styles */
+  .rItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .rItem:last-child {
+    border-bottom: none;
+  }
+  
+  .rIteminfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Title, Description, and Max People */
+  .rTitle {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .rDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .rMaxpeople {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  /* Select Rooms */
+  .rSelectRooms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: gray;
+  }
+  
+  /* Room */
+  .room {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Button */
+  .rButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .rButton:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+  }
+  
+  /* Custom Checkbox Styles */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .custom-checkbox input {
+    display: none; /* Hide default checkbox */
+  }
+  
+  .custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .custom-checkbox input:checked + .checkmark {
+    background-color: #0071c2;
+  }
+  
+  .custom-checkbox .checkmark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .custom-checkbox input:checked + .checkmark::after {
+    opacity: 1;
+  }
+  
+  .custom-checkbox-label {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  

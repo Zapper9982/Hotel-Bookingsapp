@@ -1,0 +1,56 @@
+/* login.css */
+
+.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* light background color */
+    background-image: url('https://images.pexels.com/photos/261388/pexels-photo-261388.jpeg?auto=compress&cs=tinysrgb&w=1200'), url('https://images.pexels.com/photos/732199/pexels-photo-732199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .lContainer {
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    text-align: center;
+    width: 300px; /* adjust width as needed */
+  }
+  
+  .Linput {
+    width: calc(100% - 20px); /* full width input minus padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* light border */
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .lButton {
+    width: calc(100% - 20px); /* full width button minus padding */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff; /* blue button color */
+    color: #fff; /* white text color */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* smooth hover transition */
+  }
+  
+  .lButton:hover {
+    background-color: #0056b3; /* darker blue on hover */
+  }
+  
+  .span {
+    color: red; /* error message color */
+    margin-top: 10px;
+    display: block;
+  }
+  
+  
